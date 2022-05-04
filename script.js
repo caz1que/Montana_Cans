@@ -102,8 +102,10 @@ menu_link_4.addEventListener('mouseout', function(){
 // })
 
 let c = cans.getBoundingClientRect();
-paintGif.style.left = c.left + "px";
-
+if (screen_w >= 1280 ) {
+paintGif.style.left = c.left-10 + "px";
+}
+    
 setTimeout(function() {
   g1.addEventListener('mouseover', function(){
     g1.style.animation = "fade 0.3s";
