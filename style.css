@@ -638,6 +638,13 @@ footer {
     .paintGif {
         left: 200px;
     }
+    .social_logo {
+        width: 80px;
+    }
+    .sm_logo {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 @media screen and (width:1280px) {
