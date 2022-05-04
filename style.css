@@ -636,7 +636,7 @@ footer {
         top: -20px
     }
     .paintGif {
-        left: 200px;
+        left: -2000px;
         height: 50px;
         width: 50px;
         display: none;
