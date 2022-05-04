@@ -635,6 +635,9 @@ footer {
         left: -45px;
         top: -20px
     }
+    .paintGif {
+        left: 200px;
+    }
 }
 
 @media screen and (width:1280px) {
