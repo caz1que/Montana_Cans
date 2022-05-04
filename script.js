@@ -195,6 +195,10 @@ function onEntry(entry) {
     observer.observe(elm6);
   }
 
+if (screen_w < 1280) {
+  paintGif.classList.add('hidden')
+}
+
   let options8 = { threshold: [0.5] };
   let observer8 = new IntersectionObserver(onEntry, options8);
   let elements8 = document.querySelectorAll('.paintGif');
