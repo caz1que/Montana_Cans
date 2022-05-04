@@ -196,7 +196,7 @@ function onEntry(entry) {
   }
 
 if (screen_w < 1280) {
-  paintGif.classList.add('hidden')
+  paintGif.style.left = 200 + "px";
 }
 
   let options8 = { threshold: [0.5] };
