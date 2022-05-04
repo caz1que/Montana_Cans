@@ -105,6 +105,10 @@ let c = cans.getBoundingClientRect();
 if (screen_w >= 1280 ) {
 paintGif.style.left = c.left-10 + "px";
 }
+
+if (screen_w <= 480 ) {
+g1.src = "./asserts/images/gallery1-hover-mobile.jpg"
+}
     
 setTimeout(function() {
   g1.addEventListener('mouseover', function(){
