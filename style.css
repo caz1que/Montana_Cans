@@ -663,6 +663,9 @@ footer {
     .cans_button {
         margin-top: -160px;
     }
+    .paintGif {
+        display:none
+    }
 }
 
 @media screen and (width:1280px) {
