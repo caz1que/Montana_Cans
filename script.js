@@ -26,6 +26,11 @@ const screen_h = window.innerHeight;
 
 const spray = document.querySelector('.spray');
 
+const readMoreButton = document.getElementById('cans_button')
+const backButton = document.getElementById('cans_button2')
+const cansPreview = document.getElementById('cans_preview')
+const cansPreview2 = document.getElementById('cans_preview2')
+
 let count = 0;
 
 function hiddenSpray(){
@@ -102,14 +107,8 @@ menu_link_4.addEventListener('mouseout', function(){
 // })
 
 let c = cans.getBoundingClientRect();
-if (screen_w >= 1280 ) {
-paintGif.style.left = c.left-10 + "px";
-}
+paintGif.style.left = c.left + "px";
 
-if (screen_w <= 480 ) {
-g1.src = "./asserts/images/gallery1-hover-mobile.jpg"
-}
-    
 setTimeout(function() {
   g1.addEventListener('mouseover', function(){
     g1.style.animation = "fade 0.3s";
@@ -149,6 +148,10 @@ setTimeout(function() {
 
 }
 , 1500)
+
+if (screen_w <= 480 ) {
+  g1.src = "./asserts/images/gallery1-hover-mobile.jpg"
+  }
 
 form_submit.addEventListener('mouseover', function(){
     paint_button.style.animation = "changecolor 1s";
@@ -202,7 +205,7 @@ function onEntry(entry) {
   }
 
 if (screen_w < 1280) {
-  paintGif.style.left = 200 + "px";
+  paintGif.classList.add('hidden')
 }
 
   let options8 = { threshold: [0.5] };
@@ -211,3 +214,22 @@ if (screen_w < 1280) {
   for (let elm8 of elements8) {
     observer.observe(elm8);
   }
+
+
+readMoreButton.addEventListener('click', function() {
+    cansPreview2.style.display = "flex";
+    cansPreview2.style.animation = "fade 0.3s";
+    cansPreview2.style.opacity = '1';
+    cansPreview.style.animation = 'hidden 0.3s';
+    cansPreview.style.display = "none";
+    cansPreview.style.opacity = '0';
+})
+
+backButton.addEventListener('click', function() {
+  cansPreview.style.display = "flex";
+  cansPreview.style.animation = "fade 0.3s";
+  cansPreview.style.opacity = '1';
+  cansPreview2.style.animation = 'hidden 0.3s';
+  cansPreview2.style.display = "none";
+  cansPreview2.style.opacity = '0';
+})
