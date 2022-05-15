@@ -14,6 +14,8 @@ const g2 = document.getElementById("g2");
 const g3 = document.getElementById("g3");
 const g4 = document.getElementById("g4");
 
+const social_logo = document.getElementById("social_logo");
+
 const gallery_image1 = document.getElementById("gallery_image1");
 const gallery_image2 = document.getElementById("gallery_image2");
 const gallery_image3 = document.getElementById("gallery_image3");
@@ -150,7 +152,8 @@ setTimeout(function() {
 , 1500)
 
 if (screen_w <= 480 ) {
-  g1.src = "./asserts/images/gallery1-hover-mobile.jpg"
+  g1.src = "./asserts/images/gallery1-hover-mobile.jpg";
+  social_logo.style.width = 100 + "px";
   }
 
 form_submit.addEventListener('mouseover', function(){
