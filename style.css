@@ -664,7 +664,10 @@ footer {
         margin-top: -160px;
     }
     .paintGif {
-        display:none
+        display:none;
+    }
+    .social_logo {
+        width: 100px;
     }
 }
 
